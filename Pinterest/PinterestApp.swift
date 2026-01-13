@@ -11,7 +11,9 @@ import SwiftUI
 struct PinterestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
+                .preferredColorScheme(.light)
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
